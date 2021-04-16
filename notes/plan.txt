@@ -1,0 +1,8 @@
+Goal: To Create a new, fully functional, modern website for Shenzhou Mission Church, so that newcomers and existing members can use this site for events(Weekly sermons, special events, etc), Zoom links (2021), and other materials such as documents and transcripts of sermons. The website will both have a Client and Host graphical interface, such that the Host may directly create new content on this site without having to resort to code, and that the Client side will show visitors this created content.
+
+tbd....
+
+1. Begin with the HTML
+  A. create the user interface
+    a. create a file for each tab and link everything together-finished! :D
+    b. legit do the coding
