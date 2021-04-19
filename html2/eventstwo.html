@@ -38,52 +38,31 @@
 		<div class="w3-bar w3-theme w3-top w3-left-align w3-large">
 			<a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
        <a href="../index.html" class="w3-bar-item w3-button w3-theme-l1">Logo</a>
+       <!--
     <a href="aboutUstwo.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About Us</a>
     <a href="sermonstwo.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Sermons/Bible Study</a>
     <a href="eventstwo.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Events</a>
     <a href="resourcestwo.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Resources</a>
     <a href="donatetwo.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Donate</a>
     <a href="contactUstwo.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Contact</a>
+    -->
   </div>
 </div>
 
 <!-- Sidebar -->
-<div class="w3-sidebar w3-bar-block w3-collapse w3-animate-left" style="z-index:3;width:270px" id="mySidebar">
-  <div class="w3-bar w3-hide-large w3-large">
-    <a href="javascript:void(0)" onclick="w3_show_nav('menuTut')" class="w3-bar-item w3-button w3-theme w3-hover-white w3-padding-16" style="width:50%">Home</a>
-    <a href="javascript:void(0)" onclick="w3_show_nav('menuRef')" class="w3-bar-item w3-button w3-theme w3-hover-white w3-padding-16" style="width:50%">Other</a>
-  </div>
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-right w3-xlarge w3-hide-large" title="Close Menu">×</a>
-  <div id="menuTut" class="myMenu">
-  <div class="w3-container">
-    <h3>Home</h3>
-  </div>
-  <a class="w3-bar-item w3-button" href="aboutUs.html">About Us</a>
-  <a class="w3-bar-item w3-button" href="/css/default.asp">Sermons / Bible Study</a>
-  <a class="w3-bar-item w3-button" 
-  href="/js/default.asp">Resources</a>
-  <a class="w3-bar-item w3-button" 
-  href="/w3css/default.asp">Events</a>
-  <a class="w3-bar-item w3-button" href="/colors/default.asp">Donate</a>
-  <a class="w3-bar-item w3-button" href="/js/default.asp">Contact Us</a>
-  <a class="w3-bar-item w3-button" href="/xml/default.asp">Photo Gallery (with no photos)</a>
-  <a class="w3-bar-item w3-button" href="/sql/default.asp">Learn SQL</a>
-  <a class="w3-bar-item w3-button" href="/php/default.asp">Learn PHP</a>
-  </div>
-  <div id="menuRef" class="myMenu" style="display:none">
-  <div class="w3-container">
-    <h3>Other</h3>
-  </div>
-  <a class="w3-bar-item w3-button" href='/tags/default.asp'>Chinese Site</a>
-  <a class="w3-bar-item w3-button" href='/colors/default.asp'>Legacy Website</a>
-  <a class="w3-bar-item w3-button" href='/cssref/default.asp'>CSS Reference</a>
-  <a class="w3-bar-item w3-button" href='/cssref/css_selectors.asp'>CSS Selector Reference</a>
-  <a class="w3-bar-item w3-button" href='/w3css/w3css_references.asp'>W3.CSS Reference</a>
-  <a class="w3-bar-item w3-button" href='/jsref/default.asp'>JavaScript Reference</a>
-  <a class="w3-bar-item w3-button" href='/php/php_ref_array.asp'>PHP Reference</a>
-  <a class="w3-bar-item w3-button" href='/sql/sql_quickref.asp'>SQL Reference</a>
-  </div>
-</div>
+ <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+                <i class="fa fa-remove"></i>
+            </a>
+            <h4 class="w3-bar-item"><b>Menu</b></h4>
+            <a class="w3-bar-item w3-button w3-hover-black" href="../index.html">Home</a>
+            <a class="w3-bar-item w3-button w3-hover-black" href="aboutUstwo.html">About Us</a>
+            <a class="w3-bar-item w3-button w3-hover-black" href="sermonstwo.html">Sermons/Bible Study</a>
+            <a class="w3-bar-item w3-button w3-hover-black" href="eventstwo.html">Events</a>
+            <a class="w3-bar-item w3-button w3-hover-black" href="resourcestwo.html">Resources</a>
+            <a class="w3-bar-item w3-button w3-hover-black" href="donatetwo.html">Donate</a>
+            <a class="w3-bar-item w3-button w3-hover-black" href="contactUstwo.html">Contact</a>
+        </nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
@@ -135,10 +114,37 @@
       <br>
       <br>
       Youtube @ 神州宣教ShenzhouMC or https://www.youtube.com/channel/UCcIkVoDny1y6GwqKI-1PY9Q</p>
+      <br>
+      <br>
+      <p> </p>
     </div>
   </footer>
 
 <!-- END MAIN -->
+       <script>
+          function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+          </script>
 </div>
 
 </body>
